@@ -4,7 +4,22 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>PCOD+ Movement</title>
+
+		Reveal.initialize({
+
+		    // other options ...
+
+		        math: {
+			        mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+				        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					    },
+
+					        dependencies: [
+						        { src: 'plugin/math/math.js', async: true }
+							    ]
+
+							    });
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -201,7 +216,7 @@
 					<img src="images/ScreenshotHanks2011.png">
 				</section>
 
-
+				<section>
 				<section>
                                         <h3>Population Level Inference</h3>
 					<img src="images/ScreenshotQuoteHooten.png">	
@@ -211,6 +226,7 @@
 					<h3>Population Level Inference</h3>	
 					<img src="images/ScreenshotHooten2016Three.png">
 				</section>
+			</section>
 			
 				<section>
 					<h2>Spatial Point Process Models</h2>
