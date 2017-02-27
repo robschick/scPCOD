@@ -139,10 +139,8 @@
 					<h3>State Dependent Movement</h3>	
 					<img src="images/langrockStates.png">
 				</section>
-			</section>	
 				
 				
-			    <section>	
 				<section>
 			            <h3>What we plan to do, III</h3>
 				    <ul>
@@ -368,6 +366,16 @@
 					</ul>
 				</section>
 			</section>
+
+			<section>
+				<h3>Let's Recap</li>
+					<ul>
+						<li>Current models do not provide realistic estimates of exposure</li>
+						<li>But it's a critical input for PCOD models</li>
+						<li>Fitting movement models to data should tell us about switching</li>
+						<li>Building IBMs of increasing complexity should provide more realistic estimates</li>
+					</ul>
+			</section>
 			</div>
 		</div>
 
@@ -378,9 +386,14 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				math: {
+				        mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+						    },
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
+				        { src: 'plugin/math/math.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
